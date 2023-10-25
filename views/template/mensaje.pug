@@ -1,0 +1,12 @@
+extends ../layout/index
+
+block contenido
+    div.flex.flex-col.items-center.py-10
+        h1.text-4xl.my-4.font-extrabold.text-center Bienes
+            span.font-normal Raices
+        div.flex.flex-col.items-center.border-black.border-2.rounded-md.p-7.mt-4
+            h2.text-center.font-bold.text-xl Cuenta creada correctamente
+
+            p.text-xl.font-semibold.text-center.my-8 Ya puedes ingresar a la página
+
+            a(href="/auth/login" class="text-center font-semibold text-lg bg-slate-400 mt-6 p-3 rounded-md hover:bg-slate-500") Iniciar Sesión
