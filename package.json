@@ -7,7 +7,10 @@
   "scripts": {
     "start": "node index.js",
     "server": "nodemon index.js",
-    "css": "postcss public/css/tailwind.css -o public/css/app.css --watch"
+    "css": "postcss public/css/tailwind.css -o public/css/app.css --watch",
+    "js": "webpack --watch",
+    "db:importar": "node ./seed/seeder.js -i",
+    "db:eliminar": "node ./seed/seeder.js -e"
   },
   "author": "Sofia Piombetti",
   "license": "ISC",
@@ -27,6 +30,8 @@
     "autoprefixer": "^10.4.15",
     "postcss": "^8.4.27",
     "postcss-cli": "^10.1.0",
-    "tailwindcss": "^3.3.3"
+    "tailwindcss": "^3.3.3",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
   }
 }
